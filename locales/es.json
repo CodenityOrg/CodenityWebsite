@@ -1,3 +1,20 @@
 {
-    "Welcome": "Hola, bienvenido a nuestro sitio"
+	"title": "Aprende creando tecnologia para resolver problemas sociales",
+	"subtitle": "Aprende a crear tecnologia con valor para la sociedad",
+	"cta_caption": "Aprende mas",
+    "menu_option1": "Inicio",
+    "menu_option2": "Acerca de",
+    "menu_option3": "Blog",
+    "menu_option4": "Contacto",
+    "feature_section_title": "Que te ofrecemos?",
+    "feature1_title": "Aprende ayudando",
+    "feature1_descr": "Aprende o practica una tecnologia aplicandola a proyectos con fines sociales trabajando con personas de tu mismo nivel o superior.",
+    "feature2_title": "Soluciona problemas reales",
+    "feature2_descr": "Propone un problema y busquemos una solucion tecnologica! Juntos desarollaremos un proyecto que supla esas necesidades.",
+    "feature3_title": "Portafolio validable",
+    "feature3_descr": "Genera un portafolio validable para empresas, y que aporten un valor mas grande para nuestra sociedad.",
+    "projects_section_title": "Nuestros proyectos",
+    "projects_section_subtitle": "Cada proyecto tiene un fin social sin fines de lucro",
+    "project1_title": "Helpet",
+    "project1_descr": "Ayuda a encontrar mascotas perdidas alrededor de tu ciudad! :)"
 }

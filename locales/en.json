@@ -1,3 +1,20 @@
 {
-    "Welcome": "Hi, welcome to our site"
+    "title": "Learn by creating technology to solve social problems",
+    "subtitle": "Learn to create technology with value for society",
+    "cta_caption": "Learn more",
+    "menu_option1": "Home",
+    "menu_option2": "About",
+    "menu_option3": "Blog",
+    "menu_option4": "Contact",
+    "feature_section_title": "What do we offer you?",
+    "feature1_title": "Learn by helping",
+    "feature1_descr": "Learn or practice a technology by applying it to social projects working with people of the same level or higher.",
+    "feature2_title": "Solve real problems",
+    "feature2_descr": "Propose a problem and let's look for a technological solution! Together we will develop a project that meets those needs.",
+    "feature3_title": "Validable Portfolio",
+    "feature3_descr": "Generate a validable portfolio for companies, and that contribute a greater value for our society.",
+    "projects_section_title": "Our projects",
+    "projects_section_subtitle": "Each project has a non-profit social purpose",
+    "project1_title": "Helpet",
+    "project1_descr": "Help find lost pets around your city! :)"
 }
