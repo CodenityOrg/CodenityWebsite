@@ -92,7 +92,7 @@ button:focus {
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .section_gap {
-  padding: 130px 0; }
+  padding: 50px 0; }
   @media (max-width: 991px) {
     .section_gap {
       padding: 70px 0; } }
@@ -2909,7 +2909,7 @@ h6 {
   display: inline-block;
   background: #002347;
   padding: 0px 48px;
-  color: #fdc632;
+  color: white;
   font-size: 13px;
   font-weight: 500;
   line-height: 48px;
@@ -2924,8 +2924,7 @@ h6 {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s; }
   .primary-btn2:hover {
-    background: transparent;
-    color: #002347;
+    color: white;
     border: 1px solid #002347; }
 
 .white_bg_btn {

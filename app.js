@@ -1,16 +1,15 @@
-var createError = require('http-errors');
-var express = require('express');
-var hbs = require('express-handlebars');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
-var i18n = require('./i18n');
-var hbsconf = require('./hbsconf');
+const createError = require('http-errors');
+const express = require('express');
+const hbs = require('express-handlebars');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
+const i18n = require('./i18n');
+const hbsconf = require('./hbsconf');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+const indexRouter = require('./routes/index');
 
-var app = express();
+const app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -26,7 +25,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(i18n);
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

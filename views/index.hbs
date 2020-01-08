@@ -46,7 +46,7 @@
           <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <a class="navbar-brand logo_h" href="#"
-              ><img src="img/logo.png" alt=""
+              ><img  width="200" src="img/logo.png" alt=""
             /></a>
             <button
               class="navbar-toggler"
@@ -66,14 +66,14 @@
               id="navbarSupportedContent"
             >
               <ul style="color: white;" class="nav navbar-nav menu_nav ml-auto">
-                <li class="nav-item active">
+{{!--                 <li class="nav-item active">
                   <a class="nav-link" href="#">{{__ "menu_option1"}}</a>
-                </li>
-                <li class="nav-item">
+                </li> --}}
+{{!--                 <li class="nav-item">
                   <a class="nav-link" href="#">{{__ "menu_option2"}}</a>
-                </li>
+                </li> --}}
 
-                <li class="nav-item submenu dropdown">
+                {{!-- <li class="nav-item submenu dropdown">
                   <a
                     href="#"
                     class="nav-link dropdown-toggle"
@@ -91,7 +91,7 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">{{__ "menu_option4"}}</a>
-                </li>
+                </li> --}}
               </ul>
             </div>
           </div>
@@ -114,7 +114,7 @@
                     {{__ "title"}}
                 </h2>
                 <div>
-                  <a href="#" class="primary-btn2 mb-3 mb-sm-0">{{__ "cta_caption"}}</a>
+                  <a href="#features" class="primary-btn2 mb-3 mb-sm-0">{{__ "cta_caption"}}</a>
                 </div>
               </div>
             </div>
@@ -125,7 +125,7 @@
     <!--================ End Home Banner Area =================-->
 
     <!--================ Start Feature Area =================-->
-    <section class="feature_area section_gap_top">
+    <section id="features" class="feature_area section_gap_top">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-5">
@@ -190,15 +190,15 @@
         </div>
         <div class="row">
           <!-- single course -->
-          <div class="col-lg-12">
-            <div class="owl-carousel active_course">
+          <div class="col-lg-4">
+            <div >
               <div class="single_course">
                 <div class="course_head">
                   <img class="img-fluid" src="img/helpet-screen.png" alt="" />
                 </div>
                 <div class="course_content">
                   <h4 class="mb-3">
-                    <a href="course-details.html">{{__ "project1_title"}}</a>
+                    <a href="http://helpet.codenity.org">{{__ "project1_title"}}</a>
                   </h4>
                   <p>
                       {{__ "project1_descr"}}
@@ -207,11 +207,13 @@
                   <div
                     class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4"
                   >
-                    <div class="authr_meta">
-                      <img src="img/courses/author1.png" alt="" />
-                    </div>
-<div class="authr_meta">
-                      <img src="img/courses/author1.png" alt="" />
+                    <div class="row authr_meta">
+                      <div style="margin: 0 5px;">
+                        <img src="img/courses/author1.png" alt="" />
+                      </div>
+                      <div style="margin: 0 5px;">
+                        <img src="img/courses/author1.png" alt="" />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -232,14 +234,11 @@
         <div class="row footer-bottom d-flex justify-content-between">
           <p class="col-lg-8 col-sm-12 footer-text m-0 text-white">
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
           </p>
           <div class="col-lg-4 col-sm-12 footer-social">
-            <a href="#"><i class="ti-facebook"></i></a>
-            <a href="#"><i class="ti-twitter"></i></a>
-            <a href="#"><i class="ti-dribbble"></i></a>
-            <a href="#"><i class="ti-linkedin"></i></a>
+            <a href="https://www.facebook.com/codenity19"><i class="ti-facebook"></i></a>
           </div>
         </div>
       </div>
