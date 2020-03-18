@@ -7,16 +7,14 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <link rel="icon" href="/img/favicon.png" type="image/png" />
     <title>Codenity</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/flaticon.css" />
-    <link rel="stylesheet" href="css/themify-icons.css" />
-    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
-    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
-    <!-- main css -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/flaticon.css" />
+    <link rel="stylesheet" href="/css/themify-icons.css" />
+    <link rel="stylesheet" href="/vendors/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/vendors/nice-select/css/nice-select.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160607616-1"></script>
     <script>
@@ -25,6 +23,8 @@
       gtag('js', new Date());
       gtag('config', 'UA-160607616-1');
     </script>
+    <!-- main css -->
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
 
   <body>
@@ -35,7 +35,7 @@
           <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <a class="navbar-brand logo_h" href="#"
-              ><img style="padding: 15px;"  width="200" src="img/logo.png" alt=""
+              ><img style="padding: 15px;"  width="200" src="/img/logo.png" alt=""
             /></a>
             <button
               class="navbar-toggler"
@@ -165,7 +165,7 @@
     <!--================ End Feature Area =================-->
 
     <!--================ Start Slack Area =================-->
-    <div class="slack">
+    <div class="slack" id="slack-section">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6">
@@ -182,44 +182,39 @@
         <div class="container">
           <div class="row justify-content-center justify-content-md-start">
             <div class="w-75 col-lg-4 col-md-6 mb-5">
-              <a target="_blank" href="{{__ "slack_download_link"}}">
-                <div class="item-content">
-                  <span class="step-number">1</span>
-                  <p>{{__ "slack_step_1"}}</p>
-                </div>
-                <img class="img-fluid" src="img/slack-section/step-1.png" alt="" />
-              </a>
+              <div class="item-content">
+                <span class="step-number">1</span>
+                <p>{{__ "slack_step_1"}} <b><a target="_blank" href="{{__ "slack_download_link"}}">{{__ "slack_step_1.1"}}</a></b> </p>
+              </div>
+              <img class="img-fluid" src="/img/slack-section/step-1.png" alt="" />
             </div>
             <div class="w-75 col-lg-4 col-md-6 mb-5">
-              <a target="_blank"
-                href="https://codenity-team.slack.com/join/shared_invite/enQtOTQwMTY4ODY0Mjc4LTg0MDg0OGYzMzJkZTExYjEzZTIzZjIxYzc3ZDZjMDU1MGRjOWVlZmU3ODMwN2QyYTQxODBjNmE5YjVmZGExNDA">
-                <div class="item-content">
-                  <span class="step-number">2</span>
-                  <p>{{__ "slack_step_2"}}</p>
-                </div>
-                <img class="img-fluid" src="img/slack-section/step-2.png" alt="" />
-              </a>
+              <div class="item-content">
+                <span class="step-number">2</span>
+                <p>{{__ "slack_step_2"}} <b><a target="_blank" href="https://codenity-team.slack.com/join/shared_invite/enQtOTQwMTY4ODY0Mjc4LTg0MDg0OGYzMzJkZTExYjEzZTIzZjIxYzc3ZDZjMDU1MGRjOWVlZmU3ODMwN2QyYTQxODBjNmE5YjVmZGExNDA">{{__ "slack_step_2.1"}}</a></b> </p>
+              </div>
+              <img class="img-fluid" src="/img/slack-section/step-2.png" alt="" />
             </div>
             <div class="w-75 col-lg-4 col-md-6 mb-5">
               <div class="item-content">
                 <span class="step-number">3</span>
                 <p>{{__ "slack_step_3"}}</p>
               </div>
-              <img class="img-fluid" src="img/slack-section/step-3.png" alt="" />
+              <img class="img-fluid" src="/img/slack-section/step-3.png" alt="" />
             </div>
             <div class="w-75 col-lg-4 col-md-6 mb-5">
               <div class="item-content">
                 <span class="step-number">4</span>
                 <p>{{__ "slack_step_4"}}</p>
               </div>
-              <img class="img-fluid" src="img/slack-section/step-4.png" alt="" />
+              <img class="img-fluid" src="/img/slack-section/{{__ "slack_step_4_img" }}" alt="" />
             </div>
             <div class="w-75 col-lg-4 col-md-6">
               <div class="item-content">
                 <span class="step-number">5</span>
                 <p>{{__ "slack_step_5"}}</p>
               </div>
-              <img class="img-fluid" src="img/slack-section/step-5.png" alt="" />
+              <img class="img-fluid" src="/img/slack-section/step-5.png" alt="" />
             </div>
           </div>
         </div>
@@ -246,7 +241,7 @@
             <div >
               <div class="single_course">
                 <div class="course_head">
-                  <img class="img-fluid" src="img/helpet-screen.png" alt="" />
+                  <img class="img-fluid" src="/img/helpet-screen.png" alt="" />
                 </div>
                 <div class="course_content">
                   <h4 class="mb-3">
@@ -261,10 +256,10 @@
                   >
                     <div class="row authr_meta">
                       <div style="margin: 0 5px;">
-                        <img src="img/courses/author1.png" alt="" />
+                        <img src="/img/courses/author1.png" alt="" />
                       </div>
                       <div style="margin: 0 5px;">
-                        <img src="img/courses/author1.png" alt="" />
+                        <img src="/img/courses/author1.png" alt="" />
                       </div>
                     </div>
                   </div>
@@ -299,17 +294,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-    <script src="js/owl-carousel-thumb.min.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/mail-script.js"></script>
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/owl-carousel-thumb.min.js"></script>
     <!--gmaps Js-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-    <script src="js/gmaps.min.js"></script>
-    <script src="js/theme.js"></script>
+    <script src="/js/theme.js"></script>
   </body>
 </html>
