@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{__ "lang"}}">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -25,6 +25,14 @@
     </script>
     <!-- main css -->
     <link rel="stylesheet" href="/css/style.css" />
+    <!-- FB OG tags -->
+    <meta property="og:title" content="Codenity">
+    <meta property="og:site_name" content="Codenity.org">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="{{__ "feature2_descr"}}">
+    <meta property="og:image" content="/img/logo-fb-thumbnail.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
   </head>
 
   <body>
@@ -238,10 +246,11 @@
         <div class="row">
           <!-- single course -->
           <div class="col-lg-4">
-            <div >
+            <div>
+              <!--<div data-target="#helpet-modal" data-toggle="modal" class="single_course">-->
               <div class="single_course">
                 <div class="course_head">
-                  <img class="img-fluid" src="/img/helpet-screen.png" alt="" />
+                  <img class="img-fluid" src="/img/helpet-screen.jpg" alt="" />
                 </div>
                 <div class="course_content">
                   <h4 class="mb-3">
@@ -249,7 +258,6 @@
                   </h4>
                   <p>
                       {{__ "project1_descr"}}
-
                   </p>
                   <div
                     class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4"
@@ -271,6 +279,30 @@
       </div>
     </div>
     <!--================ End Popular Courses Area =================-->
+
+    <!--================ Start Helpet Collaborators Modal //TODO =================-->
+    <!--
+        <div class="modal fade" id="helpet-modal" tabindex="-1" role="dialog" aria-labelledby="Helpet collaborators" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                // TODO collaborators info translations
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        -->
+    <!--================ End Helpet Collaborators Modal =================-->
 
     <!--================ Start Events Area =================-->
     <!--================ End Events Area =================-->
