@@ -248,8 +248,7 @@
           <!-- single course -->
           <div class="col-lg-4">
             <div>
-              <!--<div data-target="#helpet-modal" data-toggle="modal" class="single_course">-->
-              <div class="single_course">
+              <div data-target="#helpet-modal" data-toggle="modal" class="single_course">
                 <div class="course_head">
                   <img class="img-fluid" src="/img/helpet-screen.jpg" alt="" />
                 </div>
@@ -264,11 +263,25 @@
                     class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4"
                   >
                     <div class="row authr_meta">
-                      <div style="margin: 0 5px;">
-                        <img src="/img/courses/author1.png" alt="" />
+                      <div class="collabs-avatar">
+                        <a href="https://github.com/AngelRodRo" target="_blank" rel="noopener noreferrer">
+                          <img class="rounded-circle"  width="50" height="50" src="https://avatars0.githubusercontent.com/u/8053607?v=4" alt="Angel Rodriguez Romero" />
+                        </a>
                       </div>
-                      <div style="margin: 0 5px;">
-                        <img src="/img/courses/author1.png" alt="" />
+                      <div class="collabs-avatar">
+                        <a href="https://github.com/florenperetti" target="_blank" rel="noopener noreferrer">
+                          <img class="rounded-circle"  width="50" height="50" src="https://avatars2.githubusercontent.com/u/15824340?s=460&v=4" alt="Florencia Peretti" />
+                        </a>
+                      </div>
+                      <div class="collabs-avatar">
+                        <a href="https://github.com/CristianPeralta" target="_blank" rel="noopener noreferrer">
+                          <img class="rounded-circle"  width="50" height="50" src="https://avatars1.githubusercontent.com/u/20257402?s=460&u=7ce32506fc1f58a49041fe08841ea9e70cd385a1&v=4" alt="Cristian Peralta Segura" />
+                        </a>
+                      </div>
+                      <div class="collabs-avatar other-collabs">
+                        <div>
+                          +3
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -281,28 +294,175 @@
     </div>
     <!--================ End Popular Courses Area =================-->
 
-    <!--================ Start Helpet Collaborators Modal //TODO =================-->
-    <!--
-        <div class="modal fade" id="helpet-modal" tabindex="-1" role="dialog" aria-labelledby="Helpet collaborators" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
+    <!--================ Start Helpet Collaborators Modal =================-->
+    <div class="modal fade" id="helpet-modal" tabindex="-1" role="dialog" aria-labelledby="Helpet collaborators" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body no-padding">
+            <div class="row">
+              <div class="col-md-6 col-sm-12 pb-3 shadow-right">
+                <div class="row bg-blue">
+                  <div class="col-md-12">
+                    <h2>Helpet</h2>
+                    <p class="mt-2 mb-4">{{__ "project1_descr"}}</p>
+                    <img class="img-fluid project-image" src="/img/helpet-screen.jpg" alt="" />
+                    <p class="mt-3 mb-0">https://helpet.codenity.org/</p>
+                  </div>
+                </div>
+                <div class="pl-3 pr-3">
+                  <p class="mt-4 mb-3">{{__ "project1_descr_expanded"}}</p>
+                  <a href="https://github.com/CodenityOrg/helpet-FE/" target="_blank" rel="noopener noreferrer">
+                    <i class="icon github x2"></i>
+                  </a>
+                </div>
               </div>
-              <div class="modal-body">
-                // TODO collaborators info translations
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+              <div class="col-md-6 col-sm-12 p-4">
+                <h3 class="text-center">{{__ "meet_contributors"}}</h3>
+                <p class="text-center">{{__ "meet_contributors_subtitle"}}</p>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6 pr-0">
+                      <div class="card shadow-sm bg-blue">
+                        <div class="card-body text-center">
+                          <div class="row">
+                            <div class="col-md-4 pr-0 image-col">
+                              <img class="img-fluid rounded-circle" width="104" height="104" src="https://avatars3.githubusercontent.com/u/8053607?s=400&u=ff7c5a8765cd968e300a0f08cc469bd52509e92b&v=4" alt="Angel Rodriguez Romero" />
+                            </div>
+                            <div class="col-md">
+                              <h5 class="card-title">Angel Rodriguez</h5>
+                              <p class="card-text">Fullstack developer</p>
+                              <div>
+                                <a href="https://github.com/AngelRodRo" target="_blank" rel="noopener noreferrer">
+                                  <i class="icon github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/angel-rodriguez-romero-8610884b/" target="_blank" rel="noopener noreferrer">
+                                  <i class="icon linkedin"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 pr-0">
+                      <div class="card shadow-sm bg-blue">
+                        <div class="card-body text-center">
+                          <div class="row">
+                            <div class="col-md-4 pr-0 image-col">
+                              <img class="img-fluid rounded-circle" width="104" height="104"
+                                src="https://avatars2.githubusercontent.com/u/15824340?s=460&v=4" alt="Florencia Peretti" />
+                            </div>
+                            <div class="col-md">
+                              <h5 class="card-title">Florencia Peretti</h5>
+                              <p class="card-text">Fullstack developer</p>
+                              <div>
+                                <a href="https://github.com/florenperetti" target="_blank" rel="noopener noreferrer">
+                                  <i class="icon github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/florencia-peretti/" target="_blank" rel="noopener noreferrer">
+                                  <i class="icon linkedin"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 pr-0">
+                      <div class="card shadow-sm bg-blue">
+                        <div class="card-body text-center">
+                          <div class="row">
+                            <div class="col-md-4 pr-0 image-col">
+                              <img class="img-fluid rounded-circle" width="104" height="104"
+                                src="https://avatars1.githubusercontent.com/u/20257402?s=460&u=7ce32506fc1f58a49041fe08841ea9e70cd385a1&v=4" alt="Cristian Peralta Segura" />
+                            </div>
+                            <div class="col-md">
+                              <h5 class="card-title">Cristian Peralta Segura</h5>
+                              <p class="card-text">Fullstack developer</p>
+                              <div>
+                                <a href="https://github.com/CristianPeralta" target="_blank" rel="noopener noreferrer">
+                                  <i class="icon github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/cristian-peralta-segura/" target="_blank" rel="noopener noreferrer">
+                                  <i class="icon linkedin"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 pr-0">
+                      <div class="card shadow-sm bg-blue">
+                        <div class="card-body text-center">
+                          <div class="row">
+                            <div class="col-md-4 pr-0 image-col">
+                              <img class="img-fluid rounded-circle" width="104" height="104"
+                                src="https://avatars1.githubusercontent.com/u/10179993?s=460&u=43c0b8de78411a3f2c1fd2250f3546d13df1bb09&v=4" alt="Jhair Rodrigo  Viveros" />
+                            </div>
+                            <div class="col-md">
+                              <h5 class="card-title">Jhair Rodrigo Viveros</h5>
+                              <p class="card-text">Developer</p>
+                              <div>
+                                <a href="https://github.com/rodrigovive" target="_blank" rel="noopener noreferrer">
+                                  <i class="icon github"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 pr-0">
+                      <div class="card shadow-sm bg-blue">
+                        <div class="card-body text-center">
+                          <div class="row">
+                            <div class="col-md-4 pr-0 image-col">
+                              <img class="img-fluid rounded-circle" width="104" height="104"
+                                src="https://avatars3.githubusercontent.com/u/12487274?s=460&u=4f5d1b771ea91c01f6152f46b07d56d4e405b0fa&v=4" alt="José Thea" />
+                            </div>
+                            <div class="col-md">
+                              <h5 class="card-title">José Thea</h5>
+                              <p class="card-text">Developer</p>
+                              <div>
+                                <a href="https://github.com/jthea" target="_blank" rel="noopener noreferrer">
+                                  <i class="icon github"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 pr-0">
+                      <div class="card shadow-sm bg-blue">
+                        <div class="card-body text-center">
+                          <div class="row">
+                            <div class="col-md-4 pr-0 image-col">
+                              <img class="img-fluid rounded-circle" width="104" height="104"
+                                src="https://avatars2.githubusercontent.com/u/10256085?s=460&u=e9f5db20d3ba573984326fdbf7266b6df2e713a4&v=4" alt="Julio Cesar" />
+                            </div>
+                            <div class="col-md">
+                              <h5 class="card-title">Julio Cesar</h5>
+                              <p class="card-text">Developer</p>
+                              <div>
+                                <a href="https://github.com/juliocsar13" target="_blank" rel="noopener noreferrer">
+                                  <i class="icon github"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        -->
+      </div>
+    </div>
     <!--================ End Helpet Collaborators Modal =================-->
 
     <!--================ Start Events Area =================-->

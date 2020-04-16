@@ -29,5 +29,8 @@
 	"slack_step_4": "A mayor actividad podrás participar en nuestros brainstorming de proyectos",
 	"slack_step_4_img": "step-4.png",
 	"slack_step_5": "Participa en nuestros proyectos y crea un portafolio para que las empresas vean tu trabajo!",
-	"slack_download_link": "https://slack.com/intl/es-es/downloads/"
+	"slack_download_link": "https://slack.com/intl/es-es/downloads/",
+	"project1_descr_expanded": "Helpet es una SPA hecha con stack MEVN. Tiene un mapa para localizar mascotas perdidas y encontradas, y además notifica a los usuarios si alguien publica una mascota similar a la suya.",
+	"meet_contributors": "¡Conoce a nuestros colaboradores!",
+	"meet_contributors_subtitle": "Conecta con ellos desde sus redes."
 }
