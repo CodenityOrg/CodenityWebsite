@@ -18,7 +18,7 @@ theme.
 /*font Variables*/
 /*Color Variables*/
 /*=================== fonts ====================*/
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,500|Rubik:500, 600");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,800|Rubik:500, 600");
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 /*---------------------------------------------------- */
@@ -3408,6 +3408,10 @@ h6 {
   background-color: #077BAFC4;
   color: white;
 }
+.modal-xl {
+  max-width: 70vw;
+  max-height: 70vh;
+}
 .modal-body {
   font-family: "Roboto", sans-serif !important;
   font-weight: 300;
@@ -3434,12 +3438,26 @@ h6 {
 }
 .modal-body p {
   font-size: 1rem;
+  font-family: inherit;
+}
+.modal-body .description,
+.modal-body .url {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 2rem;
+}
+.modal-body .url a {
+  color: white;
 }
 .modal-body .card {
+  height: calc(100% - 1rem);
   margin-bottom: 1rem;
 }
 .modal-body .card-body {
   padding: .8rem;
+}
+.modal-body .card-title {
+  font-size: 1.3rem;
 }
 .modal-body .card-text {
   font-size: .8rem;
@@ -3448,13 +3466,30 @@ h6 {
 .shadow-right {
   box-shadow: 5px 0 6px #00000029;
 }
-.modal-xl {
-  max-width: 70vw;
-  max-height: 70vw;
-}
 .image-col {
   align-items: center;
   display: flex;
+}
+@media (max-width: 576px) {
+  .modal-xl {
+    max-width: 85vw;
+    max-height: 85vh;
+    width: 85vw;
+    height: 85vh;
+    left: 25%;
+    transform: translateX(-25%) !important;
+  }
+  .modal-xl .modal-content {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+  }
+  .modal-body .description,
+  .modal-body .url {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+  }
 }
 i.icon {
   display: inline-block;
@@ -3503,5 +3538,4 @@ i.icon.x2 {
   align-items: center;
   justify-content: center;
 }
-
 /*# sourceMappingURL=style.css.map */
