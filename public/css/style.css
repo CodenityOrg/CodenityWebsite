@@ -3408,9 +3408,16 @@ h6 {
   background-color: #077BAFC4;
   color: white;
 }
-.modal-xl {
+.modal-xl,
+.modal-xl .modal-content {
   max-width: 70vw;
-  max-height: 70vh;
+  max-height: 90vh;
+}
+.modal-content {
+  overflow: auto;
+}
+.modal-open .modal {
+  overflow: hidden;
 }
 .modal-body {
   font-family: "Roboto", sans-serif !important;
@@ -3480,7 +3487,7 @@ h6 {
     transform: translateX(-25%) !important;
   }
   .modal-xl .modal-content {
-    height: 100%;
+    width: 85vw;
     width: 100%;
     overflow: auto;
   }
